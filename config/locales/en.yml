@@ -31,3 +31,11 @@
 
 en:
   hello: "Hello world"
+
+en:
+  message:
+    room_destroyed: "Room was successfully destroyed."
+    room_created: "Room was successfully created."
+    room_updated: "Room was successfully updated."
+
+

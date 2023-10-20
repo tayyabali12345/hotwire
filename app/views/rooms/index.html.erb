@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Rooms</h1>
+
+<div class='mt-4' data-controller='search'>
+  <%= text_field_tag :query,'', placeholder: 'Search message by title', data: {action: 'input->search#search', target: 'search.params'}%>
+</div>
+
+<div id="rooms">
+  <% @rooms.each do |room| %>
+    <%= render room %>
+    <p>
+      <%= link_to "Show this room", room %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New room", new_room_path %>
