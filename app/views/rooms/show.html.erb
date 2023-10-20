@@ -1,5 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
+<%# here to appear message on multple screen simultaneously %>
+<%= turbo_stream_from @room %>
+
 <%= turbo_frame_tag "room" do%>
   <%= render @room %>
 
